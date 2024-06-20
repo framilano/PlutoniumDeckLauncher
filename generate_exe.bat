@@ -1,0 +1,1 @@
+pyinstaller Plutonium Deck Launcher.py --onefile --noconsole

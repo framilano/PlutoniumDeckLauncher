@@ -47,37 +47,36 @@ def launch_offline_game(game_name):
     elif (game_name == "t6zm" or game_folder == "t6mp"): game_folder = t6_folder
     elif (game_name == "iw5mp"): game_folder = iw5_folder
 
-    print([bootstrapper_path, game_name, game_folder, "+name", player_ingame_name, "-lan"])
     Popen([bootstrapper_path, game_name, game_folder, "+name", player_ingame_name, "-lan"], cwd=plutonium_local_path)
     root.quit()
 
 def define_buttons():
-    classic_button = Button(root, command = launch_classic, image=photo_classic, highlightthickness = 0, bd = 0)
+    classic_button = Button(root, command = launch_classic, image=photo_classic, cursor="hand2", highlightthickness = 0, bd = 0)
     classic_button.grid(row = 0, column = 0, columnspan=2)
 
     #T4
-    t4sp_button = Button(root, command = lambda: launch_offline_game("t4sp"), image=photo_t4sp, highlightthickness = 0, bd = 0)
+    t4sp_button = Button(root, command = lambda: launch_offline_game("t4sp"), image=photo_t4sp, cursor="hand2", highlightthickness = 0, bd = 0)
     t4sp_button.grid(row = 1, column = 0, columnspan=1)
     
-    t4mp_button = Button(root, command = lambda: launch_offline_game("t4mp"), image=photo_t4mp, highlightthickness = 0, bd = 0)
+    t4mp_button = Button(root, command = lambda: launch_offline_game("t4mp"), image=photo_t4mp, cursor="hand2", highlightthickness = 0, bd = 0)
     t4mp_button.grid(row = 1, column = 1, columnspan=1)
 
     #T5
-    t5sp_button = Button(root, command = lambda: launch_offline_game("t5sp"), image=photo_t5sp, highlightthickness = 0, bd = 0)
+    t5sp_button = Button(root, command = lambda: launch_offline_game("t5sp"), image=photo_t5sp, cursor="hand2", highlightthickness = 0, bd = 0)
     t5sp_button.grid(row = 2, column = 0, columnspan=1)
     
-    t5mp_button = Button(root, command = lambda: launch_offline_game("t5mp"), image=photo_t5mp, highlightthickness = 0, bd = 0)
+    t5mp_button = Button(root, command = lambda: launch_offline_game("t5mp"), image=photo_t5mp, cursor="hand2", highlightthickness = 0, bd = 0)
     t5mp_button.grid(row = 2, column = 1, columnspan=1)
 
     #T6
-    t6zm_button = Button(root, command = lambda: launch_offline_game("t6zm"), image=photo_t6zm, highlightthickness = 0, bd = 0)
+    t6zm_button = Button(root, command = lambda: launch_offline_game("t6zm"), image=photo_t6zm, cursor="hand2", highlightthickness = 0, bd = 0)
     t6zm_button.grid(row = 3, column = 0, columnspan=1, sticky='ewsn')
     
-    t6mp_button = Button(root, command = lambda: launch_offline_game("t6mp"), image=photo_t6mp, highlightthickness = 0, bd = 0)
+    t6mp_button = Button(root, command = lambda: launch_offline_game("t6mp"), image=photo_t6mp, cursor="hand2", highlightthickness = 0, bd = 0)
     t6mp_button.grid(row = 3, column = 1, columnspan=1, sticky='ewsn')
 
     #IW5
-    iw5mp_button = Button(root, command = lambda: launch_offline_game("iw5mp"), image=photo_iw5mp, highlightthickness = 0, bd = 0)
+    iw5mp_button = Button(root, command = lambda: launch_offline_game("iw5mp"), image=photo_iw5mp, cursor="hand2", highlightthickness = 0, bd = 0)
     iw5mp_button.grid(row = 4, column = 0, columnspan=2, sticky='ewsn')
 
 define_buttons()
