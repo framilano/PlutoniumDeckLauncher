@@ -14,7 +14,7 @@ Resolution is set at 1280x800.
 - [Plutonium](https://cdn.plutonium.pw/updater/plutonium.exe)
 
 ## How to install
-1. Download and extract the `PlutoniumDeckLauncher.zip` in Releases
+1. Download and extract the `PlutoniumDeckLauncher.zip` from [Releases](https://github.com/framilano/PlutoniumDeckLauncher/releases)
 2. Here's my folder structure in `/home/deck/NoLauncherGames/Plutonium`:
 
 ```
