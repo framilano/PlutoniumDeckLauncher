@@ -1,3 +1,3 @@
 del build /Q
 del dist /Q
-pyinstaller "Plutonium Deck Launcher.py" --onefile --noconsole
+pyinstaller PlutoniumDeckLauncher.py --onefile --noconsole --icon=icon.ico
