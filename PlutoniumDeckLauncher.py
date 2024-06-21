@@ -83,7 +83,8 @@ class DeckLauncher(Frame):
         self.photo_iw5mp = PhotoImage(file = "assets/images/iw5mp.png")
         
 
-    def start_music(self):
+    @staticmethod
+    def start_music():
         mixer.init()
         song_index = random.randint(0, len(config.list_of_songs) - 1)
         mixer.music.load(f"assets/music/{config.list_of_songs[song_index]}.mp3")
