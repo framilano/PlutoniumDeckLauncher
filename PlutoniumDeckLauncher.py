@@ -64,6 +64,8 @@ class DeckLauncher(Frame):
         iw5mp_button = Button(self, command = lambda: self.launch_offline_game("iw5mp"), image=self.photo_iw5mp, cursor="hand2", highlightthickness = 0, bd = 0)
         iw5mp_button.grid(row = 4, column = 0, columnspan=2)
 
+        #Starts music
+        if (config.json_file["background_music_enabled"]): self.start_music()
 
         total_width = 1280
         total_height = 800
@@ -100,10 +102,10 @@ class DeckLauncher(Frame):
     @staticmethod
     def launch_offline_game(game_name):
         game_folder = ""
-        if (game_name == "t4sp" or game_folder == "t4mp"): game_folder = config.t4_folder
-        elif (game_name == "t5sp" or game_folder == "t5mp"): game_folder = config.t5_folder
-        elif (game_name == "t6zm" or game_folder == "t6mp"): game_folder = config.t6_folder
-        elif (game_name == "iw5mp"): game_folder = config.iw5_folder
+        if (game_name == "t4sp" or game_name == "t4mp"): game_folder = config.t4_folder
+        elif (game_name == "t5sp" or game_name == "t5mp"): game_folder = config.t5_folder
+        elif (game_name == "t6zm" or game_name == "t6mp"): game_folder = config.t6_folder
+        elif (game_name == "iw5mp"): game_name = config.iw5_folder
 
         if (config.json_file["background_music_enabled"]): mixer.music.stop()
         Popen([config.bootstrapper_path, game_name, game_folder, "+name", config.player_ingame_name, "-lan"], cwd=config.plutonium_local_path)
@@ -115,7 +117,6 @@ if __name__ == "__main__":
     config = Config()
     root = Tk()
     launcher = DeckLauncher(root)
-    if (config.json_file["background_music_enabled"]): launcher.start_music()
     launcher.pack()
 
     root.mainloop()
