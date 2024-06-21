@@ -48,4 +48,9 @@ There are some editable fields in configs/plutonium_deck_launcher.json:
 - `plutonium_exe` set your plutonium.exe path
 - `windows_user_folder` set your windows/bottle username (the launcher uses it to find Plutonium appdata files), on Steam Deck the default username is "steamuser"
 - `quit_on_startup` exit the launcher when booting the game, or leave it in background so you can open it back later
+- `list_of_songs` customise your background songs playlist adding new titles in `assets/music`, remember to add the mp3 titles in this property though
+
+## Todo
+- Resume music when exiting game
+- Navigate the launcher using arrows or stick
 
