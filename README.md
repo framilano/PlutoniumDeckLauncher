@@ -14,7 +14,7 @@ Resolution is set at 1280x800.
 - [Plutonium](https://cdn.plutonium.pw/updater/plutonium.exe)
 
 ## How to install
-1. Download and extract the `PlutoniumDeckLauncher.zip` in Releases
+1. Download and extract the `PlutoniumDeckLauncher.zip` from [Releases](https://github.com/framilano/PlutoniumDeckLauncher/releases)
 2. Here's my folder structure in `/home/deck/NoLauncherGames/Plutonium`:
 
 ```
@@ -30,7 +30,7 @@ Resolution is set at 1280x800.
 ```
 You can change this folder structure editing the `plutonium_deck_launcher.json` inside the `configs` folder, maybe you need to point to a different folder or drive to retrieve your game files.
 
-3. Add PlutoniumDeckLauncher.exe as non-steam game in `Desktop Mode`.
+3. Add `PlutoniumDeckLauncher.exe` as non-steam game in `Desktop Mode`.
 4. Set `Proton Experimental` or `Proton-GE` in compatibility settings.
 5. Add the following line on command launch arguments (fsync and esync are known to cause issues with BO1/2):
 
@@ -48,4 +48,9 @@ There are some editable fields in configs/plutonium_deck_launcher.json:
 - `plutonium_exe` set your plutonium.exe path
 - `windows_user_folder` set your windows/bottle username (the launcher uses it to find Plutonium appdata files), on Steam Deck the default username is "steamuser"
 - `quit_on_startup` exit the launcher when booting the game, or leave it in background so you can open it back later
+- `list_of_songs` customise your background songs playlist adding new titles in `assets/music`, remember to add the mp3 titles in this property though
+
+## Todo
+- Resume music when exiting game
+- Navigate the launcher using arrows or stick
 
