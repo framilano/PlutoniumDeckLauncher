@@ -27,7 +27,7 @@ Resolution is set at 1280x800.
 ├── plutonium.exe
 └── PlutoniumDeckLauncher
     ├── configs
-    ├── images
+    ├── assets
     └── PlutoniumDeckLauncher.exe
 ```
 You can change this folder structure editing the `plutonium_deck_launcher.json` inside the `configs` folder, maybe you need to point to a different folder or drive to retrieve your game files.
