@@ -40,7 +40,8 @@ You can change this folder structure editing the `plutonium_deck_launcher.json` 
 
 6. Back in `Gaming Mode` and open the newly created shortcut, if everything's okay, you should be able to see the Deck Launcher. You need to download the necessary Plutonium online files first, so just touch/click on CLASSIC PLUTONIUM on top and let it configure the proton bottle with all the necessary Plutonium files.
 7. Eventually the download will end and the usual "official" Plutonium launcher should launch, login and setup the game paths from there if you need to play online.
-8. Exit PlutoniumDeckLauncher and open it back, now all shortcuts are available to use!
+8. You need to install through `Protontricks` the `xact` audio library to have all sound fx on BO1
+9. Exit PlutoniumDeckLauncher and open it back, now all shortcuts are available to use!
 
 ## Configuration
 
