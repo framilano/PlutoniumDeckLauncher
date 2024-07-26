@@ -4,7 +4,6 @@ from subprocess import Popen
 import json
 from pygame import mixer
 
-
 class Config():
 
     def __init__(self):
@@ -105,9 +104,10 @@ class DeckLauncher(Frame):
         if (game_name == "t4sp" or game_name == "t4mp"): game_folder = config.t4_folder
         elif (game_name == "t5sp" or game_name == "t5mp"): game_folder = config.t5_folder
         elif (game_name == "t6zm" or game_name == "t6mp"): game_folder = config.t6_folder
-        elif (game_name == "iw5mp"): game_name = config.iw5_folder
+        elif (game_name == "iw5mp"): game_folder = config.iw5_folder
 
         if (config.json_file["background_music_enabled"]): mixer.music.stop()
+        
         Popen([config.bootstrapper_path, game_name, game_folder, "+name", config.player_ingame_name, "-lan"], cwd=config.plutonium_local_path)
         if (config.json_file["quit_on_startup"]): root.quit()
         
