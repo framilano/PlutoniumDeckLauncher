@@ -4,7 +4,7 @@ A straightforward launcher mainly developed for Steam Deck, but can be used wher
 
 The main objective is giving a shortcut to play offline Call of Duty Plutonium-supported titles.
 
-Steam Deck LCDs seem to get banned immediately while playing obline, due to the HWID being shared and in some way triggering the anticheat. OLEDs models are not affected by this issue
+Steam Deck LCDs seem to get banned immediately while playing online, due to the HWID being shared and in some way triggering the anticheat. OLEDs models are not affected by this issue
 
 **Oh btw, I'm not affiliated with the Plutonium in any capability, show some gratitude to the devs!**
 
